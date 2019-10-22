@@ -9,6 +9,13 @@
     position: fixed;
     top:0;
     left:0;
+
+    @media @mobile{
+        flex-direction: column;
+        height:40rem;
+        position: static;
+        justify-content: flex-start;
+    }
    
     nav{
         height: 4rem;
@@ -16,9 +23,20 @@
         display: flex;
         justify-content: space-evenly;
 
+        @media @mobile{
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-evenly;
+            height:30rem;
+        }
+
         h1{
             font-size: 4.6rem;
             border: dashed 1px red;
+           @media @mobile{
+                padding:3%;
+                border-bottom:1px solid white;
+            }
         }
 
         a{
