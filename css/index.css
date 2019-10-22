@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  width: 100%;
+  background-color: #FFEBD0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Red Hat Text', sans-serif;
+  font: medium;
+  font-style: italic;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.navBar {
+  height: 10rem;
+  width: 100%;
+  background-color: #228B22;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.navBar nav {
+  height: 4rem;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navBar nav h1 {
+  font-size: 4.6rem;
+  border: dashed 1px red;
+}
+.navBar nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  font-family: 'Red Hat Text', sans-serif;
+}
+.navBar nav a:hover {
+  color: #FF7B31;
+}
+.navBar nav button {
+  height: 32px;
+  width: 148px;
+  background-color: #FF7B31;
+  color: white;
+  font-size: 1.8rem;
+  font-family: 'Red Hat Text', sans-serif;
+  border: none;
+}
+.navBar nav button:hover {
+  color: #FF7B31;
+  background-color: white;
+}
+.ccFoot {
+  text-align: center;
+}
+.about {
+  height: 120rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 4rem;
+}
+.about img {
+  width: 70%;
+}
+.about .mainText {
+  height: 30rem;
+  width: 70%;
+  text-align: center;
+}
+.about button {
+  height: 4.9rem;
+  width: 70%;
+  background-color: #FF7B31;
+  color: white;
+  font-size: 2.4rem;
+  font-family: 'Red Hat Text', sans-serif;
+  border: none;
+}
+.about button a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.4rem;
+  font-family: 'Red Hat Text', sans-serif;
+}
+.about button:hover {
+  background-color: white;
+}
+.about button:hover a {
+  color: #FF7B31;
+}
