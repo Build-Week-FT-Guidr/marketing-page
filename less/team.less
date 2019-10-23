@@ -6,7 +6,15 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         padding-top: 20rem;
-
+    @media @mobile{
+        flex-direction: column;
+        justify-content: space-evenly ;
+        flex-wrap: nowrap;
+        align-items: center;
+        //height:160rem;
+        padding-top:0rem;
+        
+    }
         
 }
 .teamItem {
@@ -14,15 +22,25 @@ height: 50rem;
 width: 30%;
 padding: 5%;
 border: 1px solid black;
+border-radius: 1.5rem;
 box-shadow: 3px gray;
 display:flex;
 flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
 text-align: center;
-
+box-shadow: 2px 2px 3px grey;
+@media @mobile{
+    width: 85%;
+    flex-direction: row;
+    padding:0%;
+    margin: 5%;
+}
 img{
     width:100%;
+    @media @mobile {
+        width: 30%;
+    }
 }
 
 a{

@@ -55,6 +55,12 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  box-shadow: 0px 1px 3px grey;
+}
+@media (max-width: 800px) {
+  .navBar {
+    position: static;
+  }
 }
 @media (max-width: 500px) {
   .navBar {
@@ -62,6 +68,7 @@ img {
     height: 40rem;
     position: static;
     justify-content: flex-start;
+    width: 100%;
   }
 }
 .navBar nav {
@@ -122,14 +129,24 @@ img {
   justify-content: space-evenly;
   padding-top: 20rem;
 }
+@media (max-width: 800px) {
+  .about {
+    padding-top: 0rem;
+  }
+}
 @media (max-width: 500px) {
   .about {
-    height: 80rem;
+    height: 78rem;
     padding-top: 0rem;
   }
 }
 .about img {
   width: 70%;
+}
+@media (max-width: 500px) {
+  .about img {
+    display: none;
+  }
 }
 .about .mainText {
   height: 30rem;
@@ -144,6 +161,11 @@ img {
   font-size: 2.4rem;
   font-family: 'Red Hat Text', sans-serif;
   border: none;
+}
+@media (max-width: 500px) {
+  .about button {
+    margin: 10%;
+  }
 }
 .about button a {
   text-decoration: none;
@@ -165,14 +187,30 @@ img {
   flex-wrap: wrap;
   padding-top: 20rem;
 }
+@media (max-width: 500px) {
+  .featuresMain {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 0rem;
+  }
+}
 .featuresItem {
   height: 20rem;
   width: 30%;
   background-color: #FF7B31;
+  border-radius: 1.5rem;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 3px grey;
+}
+@media (max-width: 500px) {
+  .featuresItem {
+    width: 85%;
+    height: 10rem;
+  }
 }
 .featuresItem h3 {
   padding: 20%;
@@ -186,20 +224,44 @@ img {
   flex-wrap: wrap;
   padding-top: 20rem;
 }
+@media (max-width: 500px) {
+  .teamMain {
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 0rem;
+  }
+}
 .teamItem {
   height: 50rem;
   width: 30%;
   padding: 5%;
   border: 1px solid black;
+  border-radius: 1.5rem;
   box-shadow: 3px gray;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  box-shadow: 2px 2px 3px grey;
+}
+@media (max-width: 500px) {
+  .teamItem {
+    width: 85%;
+    flex-direction: row;
+    padding: 0%;
+    margin: 5%;
+  }
 }
 .teamItem img {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .teamItem img {
+    width: 30%;
+  }
 }
 .teamItem a {
   text-decoration: none;
