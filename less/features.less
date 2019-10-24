@@ -5,15 +5,27 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 20rem;
+
+    @media @mobile{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items:center;
+        padding-top: 0rem;
+    }
 }
 .featuresItem{
     height:20rem;
     width:30%;
     background-color: @accents;
+    border-radius: 1.5rem;
     color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .flexMix(center,center);
+    box-shadow: 2px 2px 3px grey;
+
+@media @mobile{
+    width: 85%;
+    height: 10rem; 
+}
     h3{
         padding:20%;
         text-align: center;
