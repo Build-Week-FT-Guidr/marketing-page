@@ -136,8 +136,13 @@ img {
 }
 @media (max-width: 500px) {
   .about {
-    height: 78rem;
+    height: 90rem;
     padding-top: 0rem;
+  }
+}
+@media (max-width: 414px) {
+  .about {
+    height: 100rem;
   }
 }
 .about img {
@@ -152,6 +157,11 @@ img {
   height: 30rem;
   width: 70%;
   text-align: center;
+}
+@media (max-width: 414px) {
+  .about .mainText {
+    width: 90%;
+  }
 }
 .about button {
   height: 4.9rem;
@@ -195,6 +205,11 @@ img {
     padding-top: 0rem;
   }
 }
+@media (max-width: 414px) {
+  .featuresMain {
+    height: 150rem;
+  }
+}
 .featuresItem {
   height: 20rem;
   width: 30%;
@@ -209,7 +224,12 @@ img {
 @media (max-width: 500px) {
   .featuresItem {
     width: 85%;
-    height: 10rem;
+    height: 15rem;
+  }
+}
+@media (max-width: 414px) {
+  .featuresItem {
+    height: 22rem;
   }
 }
 .featuresItem h3 {
@@ -230,6 +250,7 @@ img {
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-items: center;
+    height: 160rem;
     padding-top: 0rem;
   }
 }
